@@ -38,6 +38,7 @@
 
   <a href="#content" class="visually-hidden-focusable">본문 바로가기</a>
 
+  <!-- header -->
   <header class="sticky-top bg-transparent">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="주 메뉴">
       <div class="container">
@@ -60,12 +61,12 @@
   </header>
 
   <main id="content">
-
+    <!-- hero -->
     <section id="hero" class="text-white bg-secondary" style="background-image: url(./img/bg_img/hero_bgimg.jpg); background-size: cover; background-position: center;">
       <div class="container py-5">
         <div class="row py-5">
           <div class="col-md-8 col-lg-6">
-            <h1 class="display-5 fw-bold mb-3 text-nowrap">나의 반려동물에게 딱 맞는 케어,<br>궁금하지 않으신가요?</h1>
+            <h1 class="display-5 fw-bold mb-3 text-wrap">나의 반려동물에게 딱 맞는 케어,<br>궁금하지 않으신가요?</h1>
             <p class="lead mb-5">이제는 데이터를 기반으로 더 정확하고 체계적인 케어를 시작해보세요.</p>
             <a href="#" class="btn btn-outline-light rounded-pill px-4">자세히 보기</a>
           </div>
@@ -73,6 +74,7 @@
       </div>
     </section>
 
+    <!-- About -->
     <section id="about" class="py-5 bg-white">
       <div class="container py-4 text-center">
         <header class="mb-5">
@@ -81,36 +83,53 @@
         </header>
 
         <div class="row g-3">
-          <!-- Point 01 -->
           <div class="col-md-4">
             <div class="card h-100 text-white bg-dark border-0"
-                 style="background-image: url(./img/card_img/About1.jpg); background-repeat: no-repeat; background-size: cover; background-position: center;">
-              <div class="card-body p-4 d-flex flex-column justify-content-end align-items-start text-start" style="min-height: 400px;">
-                <span class="small mb-1">Point 01</span>
-                <h3 class="card-title fw-bold mb-2">데이터 기반 분석</h3>
-                <p class="fw-lighter mb-0">국내외 반려동물 연구 데이터를 바탕으로 정밀한 분석 결과를 제공합니다.</p>
+                style="background-image: url(./img/card_img/About1.jpg); background-repeat: no-repeat; background-size: cover; background-position: center;">
+              <div class="card-body p-4 d-flex flex-column justify-content-end align-items-start text-start about-card-body" style="min-height: 400px;">
+                
+                <div class="w-100">
+                  <span class="small mb-1 d-block">Point 01</span>
+                  <h3 class="card-title fw-bold mb-2">데이터 기반 분석</h3>
+                  <p class="fw-lighter mb-0 about-card-text" style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; line-height: 1.4;">
+                    국내외 반려동물 연구 데이터를 바탕으로 정밀한 분석 결과를 제공합니다.
+                  </p>
+                </div>
+
               </div>
             </div>
           </div>
-          <!-- Point 02 -->
+          
           <div class="col-md-4">
             <div class="card h-100 text-white border-0"
-                 style="background-image: url('./img/card_img/About2.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
-              <div class="card-body p-4 d-flex flex-column justify-content-end align-items-start text-start" style="min-height: 300px;">
-                <span class="small mb-1">Point 02</span>
-                <h3 class="card-title fw-bold mb-2">전문 설계 시스템</h3>
-                <p class="fw-lighter mb-0">건강과 영양 데이터를 종합적으로 반영해 더 정확한 케어 기준을 제공합니다.</p>
+                style="background-image: url('./img/card_img/About2.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+              <div class="card-body p-4 d-flex flex-column justify-content-end align-items-start text-start about-card-body" style="min-height: 400px;">
+                
+                <div class="w-100">
+                  <span class="small mb-1 d-block">Point 02</span>
+                  <h3 class="card-title fw-bold mb-2">전문 설계 시스템</h3>
+                  <p class="fw-lighter mb-0 about-card-text" style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; line-height: 1.4;">
+                    건강과 영양 데이터를 종합적으로 반영해 더 정확한 케어 기준을 제공합니다.
+                  </p>
+                </div>
+
               </div>
             </div>
           </div>
-          <!-- Point 03 -->
+          
           <div class="col-md-4">
             <div class="card h-100 text-white border-0"
-                 style="background-image: url(./img/card_img/About3.jpg); background-repeat: no-repeat; background-size: cover; background-position: center;">
-              <div class="card-body p-4 d-flex flex-column justify-content-end align-items-start text-start" style="min-height: 300px;">
-                <span class="small mb-1">Point 03</span>
-                <h3 class="card-title fw-bold mb-2">간편한 키트 검사</h3>
-                <p class="fw-lighter mb-0">복잡한 병원 방문 없이 집에서 간편하게 건강 데이터를 확인할 수 있습니다.</p>
+                style="background-image: url(./img/card_img/About3.jpg); background-repeat: no-repeat; background-size: cover; background-position: center;">
+              <div class="card-body p-4 d-flex flex-column justify-content-end align-items-start text-start about-card-body" style="min-height: 400px;">
+                
+                <div class="w-100">
+                  <span class="small mb-1 d-block">Point 03</span>
+                  <h3 class="card-title fw-bold mb-2">간편한 키트 검사</h3>
+                  <p class="fw-lighter mb-0 about-card-text" style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; line-height: 1.4;">
+                    복잡한 병원 방문 없이 집에서 간편하게 건강 데이터를 확인할 수 있습니다.
+                  </p>
+                </div>
+
               </div>
             </div>
           </div>
@@ -118,169 +137,252 @@
       </div>
     </section>
 
-    <section id="process" class="py-5 text-white" style="background-image: url(./img/bg_img/4step.jpg); background-size: cover;">
+    <!-- 4step -->
+    <section id="step" class="py-5 text-white" style="background-image: url(./img/bg_img/4step.jpg); background-size: cover;">
       <div class="container py-4">
         <div class="row justify-content-between align-items-start g-5">
-          <div class="col-lg-5">
-            <h2 class="display-6 my-3 fw-regular">4가지 단계로<br><span class="fw-bold">시작하는 맞춤형 케어</span></h2>
-            <p class="text-white">반려동물의 건강은 추측이 아닌<br>데이터로 시작합니다.</p>
+          
+          <div class="col-12 col-lg-5 text-center text-lg-start mb-4 mb-lg-0">
+            <h2 class="display-6 mb-3 fw-regular">4가지 단계로<br><span class="fw-bold">시작하는 맞춤형 케어</span></h2>
+            <p class="fs-5 mb-0 fw-light">반려동물의 건강은 추측이 아닌<br>데이터로 시작합니다.</p>
           </div>
+
           <div class="col-lg-6">
             <div class="d-flex flex-column gap-3">
-              <div class="card bg-white text-dark px-4 pt-5 pb-4 border-0 rounded-3">
-                <div class="row align-items-center">
-                  <div class="col">
-                    <small class="small mb-1">STEP 01</small>
-                    <h3 class="h4 fw-bold mb-1">DNA 검사 키트 신청</h3>
-                    <p class="card-text small mb-0">DNA 검사 키트를 신청하고 집에서<br>편하게 샘플을 채취합니다.</p>
-                  </div>
+              
+              <div class="card bg-white text-dark px-4 pt-4 pb-4 border-0 rounded-3">
+                <div class="row align-items-end g-3">
+                  <div class="col"><div class="d-flex flex-column">
+                    <small class="small mb-1 text-muted">STEP 01</small>
+                    <h3 class="h4 fw-bold mb-2">DNA 검사 키트 신청</h3>
+                    <p class="card-text small mb-0">DNA 검사 키트를 신청하고 집에서 편하게 샘플을 채취합니다.</p>
+                  </div></div>
                   <div class="col-auto">
-                    <div class="bg-light p-2 rounded">이미지 영역</div>
+                    <div style="width: 108px; height: 108px;" class="d-md-none d-flex align-items-center justify-content-center">
+                      <img src="./img/card_img/4step1.png" alt="이미지" class="img-fluid" style="width: 100%; height: 100%; object-fit: contain;">
+                    </div>
+                    <div style="width: 135px; height: 135px;" class="d-none d-md-flex align-items-center justify-content-center">
+                      <img src="./img/card_img/4step1.png" alt="이미지" class="img-fluid" style="width: 100%; height: 100%; object-fit: contain;">
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="card bg-white text-dark px-4 pt-5 pb-4 border-0 rounded-3">
-                <div class="row align-items-center">
-                  <div class="col">
-                    <small class="small mb-1">STEP 02</small>
-                    <h3 class="h4 fw-bold mb-1">DNA 분석</h3>
-                    <p class="card-text small mb-0">전문 연구소에서 DNA를 분석하여 건<br>강 정보를 파악합니다.</p>
-                  </div>
+
+              <div class="card bg-white text-dark px-4 pt-4 pb-4 border-0 rounded-3">
+                <div class="row align-items-end g-3">
+                  <div class="col"><div class="d-flex flex-column">
+                    <small class="small mb-1 text-muted">STEP 02</small>
+                    <h3 class="h4 fw-bold mb-2">DNA 분석</h3>
+                    <p class="card-text small mb-0">전문 연구소에서 DNA를 분석하여 건강 정보를 파악합니다.</p>
+                  </div></div>
                   <div class="col-auto">
-                    <div class="bg-light p-2 rounded">이미지 영역</div>
+                    <div style="width: 108px; height: 108px;" class="d-md-none d-flex align-items-center justify-content-center">
+                      <img src="./img/card_img/4step2.png" alt="이미지" class="img-fluid" style="width: 100%; height: 100%; object-fit: contain;">
+                    </div>
+                    <div style="width: 135px; height: 135px;" class="d-none d-md-flex align-items-center justify-content-center">
+                      <img src="./img/card_img/4step2.png" alt="이미지" class="img-fluid" style="width: 100%; height: 100%; object-fit: contain;">
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="card bg-white text-dark px-4 pt-5 pb-4 border-0 rounded-3">
-                <div class="row align-items-center">
-                  <div class="col">
-                    <small class="small mb-1">STEP 03</small>
-                    <h3 class="h4 fw-bold mb-1">맞춤 분석</h3>
-                    <p class="card-text small mb-0">분석 결과를 바탕으로 최적화된 사료,<br>간식, 영양제를 추천받습니다.</p>
-                  </div>
+
+              <div class="card bg-white text-dark px-4 pt-4 pb-4 border-0 rounded-3">
+                <div class="row align-items-end g-3">
+                  <div class="col"><div class="d-flex flex-column">
+                    <small class="small mb-1 text-muted">STEP 03</small>
+                    <h3 class="h4 fw-bold mb-2">맞춤 분석</h3>
+                    <p class="card-text small mb-0">분석 결과를 바탕으로 최적화된 사료, 간식, 영양제를 추천받습니다.</p>
+                  </div></div>
                   <div class="col-auto">
-                    <div class="bg-light p-2 rounded">이미지 영역</div>
+                    <div style="width: 108px; height: 108px;" class="d-md-none d-flex align-items-center justify-content-center">
+                      <img src="./img/card_img/4step3.png" alt="이미지" class="img-fluid" style="width: 100%; height: 100%; object-fit: contain;">
+                    </div>
+                    <div style="width: 135px; height: 135px;" class="d-none d-md-flex align-items-center justify-content-center">
+                      <img src="./img/card_img/4step3.png" alt="이미지" class="img-fluid" style="width: 100%; height: 100%; object-fit: contain;">
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="card bg-white text-dark px-4 pt-5 pb-4 border-0 rounded-3">
-                <div class="row align-items-center">
-                  <div class="col">
-                    <small class="small mb-1">STEP 04</small>
-                    <h3 class="h4 fw-bold mb-1">정기 구독</h3>
-                    <p class="card-text small mb-0">추천 상품을 정기 구독하고 지속적인<br>건강 관리를 시작합니다.</p>
-                  </div>
+
+              <div class="card bg-white text-dark px-4 pt-4 pb-4 border-0 rounded-3">
+                <div class="row align-items-end g-3">
+                  <div class="col"><div class="d-flex flex-column">
+                    <small class="small mb-1 text-muted">STEP 04</small>
+                    <h3 class="h4 fw-bold mb-2">정기 구독</h3>
+                    <p class="card-text small mb-0">추천 상품을 정기 구독하고 지속적인 건강 관리를 시작합니다.</p>
+                  </div></div>
                   <div class="col-auto">
-                    <div class="bg-light p-2 rounded">이미지 영역</div>
+                    <div style="width: 108px; height: 108px;" class="d-md-none d-flex align-items-center justify-content-center">
+                      <img src="./img/card_img/4step4.png" alt="이미지" class="img-fluid" style="width: 100%; height: 100%; object-fit: contain;">
+                    </div>
+                    <div style="width: 135px; height: 135px;" class="d-none d-md-flex align-items-center justify-content-center">
+                      <img src="./img/card_img/4step4.png"" alt="이미지" class="img-fluid" style="width: 100%; height: 100%; object-fit: contain;">
+                    </div>
                   </div>
                 </div>
               </div>
+
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="reviews" class="py-5">
-      <div class="container py-4 text-center">
-        <h2 class="fw-bold mb-3">고객 후기</h2>
-        <p class="mb-5">펫코드를 통해 고객들의 반려동물이 어떻게 변했는지 들어보세요.</p>
-        
+    <!-- reviews -->
+    <section id="reviews" class="py-5 bg-white">
+      <div id="reviewCarousel" class="carousel slide" data-bs-touch="true">
 
-        <div class="culumn">
-            <div class="d-flex flex-nowrap overflow-x-auto gap-3 pb-5" style="scrollbar-width: thin;">
-                <!-- 후기1 -->
-                <div class="col">
-                        <div class="card h-100 border-0 p-3 text-start bg-light">
-                            <div class="card-body">
-                                <div class="d-flex align-items-center mb-3">
-                                <div class="bg-secondary rounded-circle me-2" style="width: 40px; height: 40px;"></div>
-                                <div>
-                                    <h3 class="h6 mb-0 fw-bold">최*재</h3>
-                                    <small class="text-muted">부산, 반려견 주인</small>
-                                </div>
-                                </div>
-                                <div class="text-warning mb-2">★★★★★</div>
-                                <p class="card-text small text-muted">처음에는 유전자 검사 비용이 좀 비싸다고 생각이 들었는데 확실히 유전적 정보를 파악하니까 병원 갈 때나 다른 제품...</p>
-                            </div>
-                        </div>
-                </div>
+      <div class="container py-4 mx-auto" style="max-width: 800px;">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold mb-3">고객 후기</h2>
+            <p class="mb-5">펫코드를 통해 고객들의 반려동물이 어떻게 변했는지 들어보세요.</p>
+          </div>
+        </div>
+          
+        <div class="carousel-inner">
 
-                <!-- 후기2 -->
-                <div class="col">
-                        <div class="card h-100 border-0 p-3 text-start bg-light">
-                            <div class="card-body">
-                                <div class="d-flex align-items-center mb-3">
-                                <div class="bg-secondary rounded-circle me-2" style="width: 40px; height: 40px;"></div>
-                                <div>
-                                    <h3 class="h6 mb-0 fw-bold">김*준</h3>
-                                    <small class="text-muted">서울, 반려묘 주인</small>
-                                </div>
-                                </div>
-                                <div class="text-warning mb-2">★★★★★</div>
-                                <p class="card-text small text-muted">정기구독으로 매달 받으니까 안 번거롭고 좋은 것 같아요.</p>
-                            </div>
+          <div class="carousel-item active">
+            <div class="row row-cols-1 row-cols-md-3 g-3 px-3 px-md-0 justify-content-center align-items-stretch">
+              
+              <div class="col d-grid">
+                <div class="card w-100 border-0 p-4 text-start bg-light" style="height: 175px !important;">
+                  <div class="card-body d-flex flex-column justify-content-between p-0">
+                    <div class="flex-grow-1">
+                      <div class="d-flex align-items-center mb-3">
+                        <div class="bg-secondary rounded-circle me-2" style="width: 35px; height: 35px;"></div>
+                        <div>
+                          <h3 class="h6 mb-0 fw-bold" style="font-size: 0.9rem;">최*재</h3>
+                          <small class="text-muted" style="font-size: 0.75rem;">부산, 반려견 주인</small>
                         </div>
+                      </div>
+                      <div class="text-warning mb-1" style="font-size: 0.85rem;">★★★★★</div>
+                      <p class="card-text small text-muted mb-0" 
+                        style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; line-height: 1.4;">
+                        처음에는 유전자 검사 비용이 좀 비싸다고 생각이 들었는데 확실히 유전적 정보를 파악하니까 병원 갈 때나 다른 제품 고를 때 너무 편해요.
+                      </p>
+                    </div>
+                  </div>
                 </div>
+              </div>
+              
+              <div class="col d-grid">
+                <div class="card w-100 border-0 p-4 text-start bg-light" style="height: 175px !important;">
+                  <div class="card-body d-flex flex-column justify-content-between p-0">
+                    <div class="flex-grow-1">
+                      <div class="d-flex align-items-center mb-3">
+                        <div class="bg-secondary rounded-circle me-2" style="width: 35px; height: 35px;"></div>
+                        <div>
+                          <h3 class="h6 mb-0 fw-bold" style="font-size: 0.9rem;">김*서</h3>
+                          <small class="text-muted" style="font-size: 0.75rem;">서울, 반려묘 주인</small>
+                        </div>
+                      </div>
+                      <div class="text-warning mb-1" style="font-size: 0.85rem;">★★★★★</div>
+                      <p class="card-text small text-muted mb-0" 
+                        style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; line-height: 1.4;">
+                        글자 수가 조금 더 길어져도 전체 카드의 높이가 자동으로 맞춰지는지 확인하기 위한 문장입니다.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col d-grid">
+                <div class="card w-100 border-0 p-4 text-start bg-light" style="height: 175px !important;">
+                  <div class="card-body d-flex flex-column justify-content-between p-0">
+                    <div class="flex-grow-1">
+                      <div class="d-flex align-items-center mb-3">
+                        <div class="bg-secondary rounded-circle me-2" style="width: 35px; height: 35px;"></div>
+                        <div>
+                          <h3 class="h6 mb-0 fw-bold" style="font-size: 0.9rem;">이*민</h3>
+                          <small class="text-muted" style="font-size: 0.75rem;">경기, 반려견 주인</small>
+                        </div>
+                      </div>
+                      <div class="text-warning mb-1" style="font-size: 0.85rem;">★★★★★</div>
+                      <p class="card-text small text-muted mb-0" 
+                        style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; line-height: 1.4;">
+                        미리 건강 체크를 할 수 있어서 마음이 편해요. 추천합니다.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-                <!-- 후기3 -->
-                <div class="col">
-                        <div class="card h-100 border-0 p-3 text-start bg-light">
-                            <div class="card-body">
-                                <div class="d-flex align-items-center mb-3">
-                                <div class="bg-secondary rounded-circle me-2" style="width: 40px; height: 40px;"></div>
-                                <div>
-                                    <h3 class="h6 mb-0 fw-bold">이*진</h3>
-                                    <small class="text-muted">대구, 반려견 주인</small>
-                                </div>
-                                </div>
-                                <div class="text-warning mb-2">★★★★★</div>
-                                <p class="card-text small text-muted">인기 많은 간식들 줘도 잘 안 먹어서 다 남겼는데 추천 상품으로 구매해서 주니까 잘 먹어요!</p>
-                            </div>
-                        </div>
-                </div>
-                <!-- 후기4 -->
-                <div class="col">
-                        <div class="card h-100 border-0 p-3 text-start bg-light">
-                            <div class="card-body">
-                                <div class="d-flex align-items-center mb-3">
-                                <div class="bg-secondary rounded-circle me-2" style="width: 40px; height: 40px;"></div>
-                                <div>
-                                    <h3 class="h6 mb-0 fw-bold">박*호</h3>
-                                    <small class="text-muted">서울, 반려견 주인</small>
-                                </div>
-                                </div>
-                                <div class="text-warning mb-2">★★★★★</div>
-                                <p class="card-text small text-muted">유전자 분석 결과가 정확할지 의심됐는데 추천 사료로 바꾸니까 아토피가 정말 눈에 띄게 좋아졌어요.</p>
-                            </div>
-                        </div>
-                </div>
             </div>
-            <!-- 버튼 -->
-            <div class="d-flex justify-content-center gap-3">
-                <button type="button" class="btn btn-light rounded-pill text-dark p-2 bg-opacity-25 text-light link-hover-bg-opacity-100">
-                    <i class="bi bi-arrow-left-short fs-3 lh-1 text-secondary"></i>
-                </button>
-                <button type="button" class="btn btn-light rounded-pill text-dark p-2 bg-opacity-25 text-light link-hover-bg-opacity-100">
-                    <i class="bi bi-arrow-right-short fs-3 lh-1 text-secondary"></i>
-                </button>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row row-cols-1 row-cols-md-3 g-3 px-3 px-md-0 justify-content-center align-items-stretch">
+              
+              <div class="col d-grid">
+                <div class="card w-100 border-0 p-4 text-start bg-light" style="height: 175px !important;">
+                  <div class="card-body d-flex flex-column justify-content-between p-0">
+                    <div class="flex-grow-1">
+                      <div class="d-flex align-items-center mb-3">
+                        <div class="bg-secondary rounded-circle me-2" style="width: 35px; height: 35px;"></div>
+                        <div>
+                          <h3 class="h6 mb-0 fw-bold" style="font-size: 0.9rem;">박*진</h3>
+                          <small class="text-muted" style="font-size: 0.75rem;">인천, 반려묘 주인</small>
+                        </div>
+                      </div>
+                      <div class="text-warning mb-1" style="font-size: 0.85rem;">★★★★★</div>
+                      <p class="card-text small text-muted mb-0" 
+                        style="display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis; line-height: 1.4;">
+                        매우 만족스럽습니다. 진작 해볼 걸 그랬어요. 후기가 다음 페이지로 아주 잘 넘어오네요!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col d-grid">
+                <div class="card w-100 border-0 p-4 text-start bg-light border-dashed" style="height: 175px !important;">
+                  <div class="card-body d-flex align-items-center justify-content-center p-0">
+                    <p class="text-muted mb-0 small">다음 후기를 기다리고 있어요</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col d-grid">
+                <div class="card w-100 border-0 p-4 text-start bg-light border-dashed" style="height: 175px !important;">
+                  <div class="card-body d-flex align-items-center justify-content-center p-0">
+                    <p class="text-muted mb-0 small">다음 후기를 기다리고 있어요</p>
+                  </div>
+                </div>
+              </div>
+
             </div>
+          </div>
+
         </div>
 
+        <div class="d-flex justify-content-center gap-3 mt-5">
+          <button type="button" class="btn btn-light rounded-pill text-dark p-2 bg-opacity-25 text-light link-hover-bg-opacity-100" 
+                  data-bs-target="#reviewCarousel" data-bs-slide="prev">
+            <i class="bi bi-arrow-left-short fs-3 lh-1 text-secondary"></i>
+          </button>
+          <button type="button" class="btn btn-light rounded-pill text-dark p-2 bg-opacity-25 text-light link-hover-bg-opacity-100" 
+                  data-bs-target="#reviewCarousel" data-bs-slide="next">
+            <i class="bi bi-arrow-right-short fs-3 lh-1 text-secondary"></i>
+          </button>
+        </div>
+
+      </div>
     </section>
 
+    <!-- cta-banner -->
     <section id="cta-banner" class="py-5 text-white bg-secondary" style="background-image: url(./img/bg_img/bg1.jpg); background-size: cover; background-position: center;">
       <div class="container py-5 text-start">
         <div class="row">
           <div class="col-md-8 col-lg-6">
-            <h2 class="display-6 fw-bold mb-3">당신의 반려동물을 위한 첫 관문<br>펫코드와 함께 하세요.</h2>
-            <p class="mb-4">소중한 아이를 위한 데이터 중심 맞춤 솔루션</p>
+            <h2 class="display-6 fw-bold mb-3">당신의 반려동물을 위한 첫 걸음<br>펫코드와 함께하세요.</h2>
+            <p class="mb-4">스마트 케어로 반려견의 삶의 질을 높입니다.</p>
             <a href="#" class="btn btn-outline-light rounded-pill px-4">자세히 보기</a>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- FAQ -->
     <section id="faq" class="py-5 bg-white">
         <div class="container py-4 mx-auto" style="max-width: 800px;">
             
@@ -364,50 +466,80 @@
         </div>
     </section>
 
-    <section id="newsletter" class="py-5 text-white bg-dark" style="background-image: url('newsletter-bg.jpg'); background-size: cover; background-position: center;">
-      <div class="container py-4">
-        <div class="row align-items-center g-4">
-          <div class="col-md-6 text-start">
-            <h2 class="fw-bold mt-1 mb-4">펫코드<br>뉴스레터 구독하기</h2>
-            <p class="mb-0 fw-light">반려동물 건강 관리에 도움이 되는 최신<br>정보와 맞춤 케어 팁을 받아보세요.</p>
+    <!-- newsletter -->
+    <section id="newsletter" class="py-5 text-white bg-dark position-relative" style="background-image: url(./img/bg_img/bg2.jpg); background-size: cover; background-position: center;">
+      <div class="container py-5">
+        <div class="row justify-content-between align-items-center">
+
+          <div class="col-12 col-md-3">
+            <div class="display-6 d-inline-flex align-items-center mb-0 gap-1">
+              <p class="fs-1">3,754</p>
+              <p class="fs-4">+</p>
+            </div>
           </div>
-          <div class="col-md-6">
-            <div class="text-end mb-2"><span class="badge bg-primary fs-6">3,754+ 구독 중</span></div>
-            <form class="row g-2">
-              <div class="col">
-                <label for="newsletterEmail" class="visually-hidden">이메일 주소 입력</label>
-                <input type="email" class="form-control" id="newsletterEmail" placeholder="이메일 주소를 입력해 주세요" required>
-              </div>
-              <div class="col-auto">
-                <button type="submit" class="btn btn-primary px-4">구독</button>
-              </div>
-            </form>
+          
+          <div class="col-12 col-md-8 d-flex justify-content-md-end mt-4 mt-md-0">
+            
+            <div class="text-start" style="width: 100%; max-width: 400px;"> 
+              <h2 class="display-6 fw-bold mt-1 mb-3">펫코드<br>뉴스레터 구독하기</h2>
+              <p class="mb-4 fw-light">
+                반려동물 건강 관리에 도움이 되는 최신<br>정보와 맞춤 케어 팁을 받아보세요.
+              </p>
+              
+              <form class="row g-2">
+                <div class="col">
+                  <label for="newsletterEmail" class="visually-hidden">이메일 주소 입력</label>
+                  <input type="email" class="form-control form-control-lg fs-6" id="newsletterEmail" placeholder="이메일 주소를 입력해 주세요" required>
+                </div>
+                <div class="col-auto">
+                  <button type="submit" class="btn btn-secondary btn-lg fs-6 px-4">구독</button>
+                </div>
+              </form>
+              
+              <p class="text-white-50 small mt-2 mb-0" style="font-size: 0.8rem;">
+                구독하면 개인정보 보호정책에 동의합니다.
+              </p>
+            </div>
           </div>
+
         </div>
       </div>
     </section>
 
   </main>
 
-  <footer class="py-5 bg-dark text-secondary border-top border-secondary">
-    <div class="container d-flex justify-content-between align-items-end">
-        <div class="d-flex flex-column align-items-start">
-            <a class="mb-4">
-                <img src="./img/identity/Petcode_logo.svg" alt="펫코드 홈" width="156" height="25" style="filter: invert(1);">
-            </a>
-            <div class="d-flex small mb-2 gap-3 ps-0 fw-bold">
-                <a href="#" class="text-decoration-none text-secondary">개인정보처리방침</a>
-                <a href="#" class="text-decoration-none text-secondary">서비스 약관</a>
-                <a href="#" class="text-decoration-none text-secondary">고객문의</a>
-            </div>
-            <!-- <p class="small mb-1">주소, 메일, 연락처</p> -->
-            <p class="small mb-0">(08288)서울특별시 구로구 새말로 97&nbsp;&nbsp;|&nbsp;&nbsp;contact@petcode.kr&nbsp;&nbsp;|&nbsp;&nbsp;02-548-2026</p>
-      </div>
-      <div>
-        <div class="col-sm-6">
-          <p class="small mb-0 text-nowrap">&copy; 2026 Petcode. All rights reserved.</p>
+  <!-- footer -->
+  <footer class="py-5 bg-dark text-secondary">
+    <div class="container footer-container">
+      
+      <div class="row w-100 g-0 justify-content-lg-between align-items-lg-end">
+        
+        <div class="col-12 col-lg-9 d-flex flex-column align-items-start">
+          <a href="#" class="mb-4 d-block">
+            <img src="./img/identity/Petcode_logo.svg" alt="펫코드 홈" width="156" height="25" class="footer-logo" style="filter: invert(1);">
+          </a>
+          
+          <div class="d-flex flex-wrap small mb-3 gap-3 fw-bold footer-links">
+            <a href="#" class="text-decoration-none text-secondary">개인정보처리방침</a>
+            <a href="#" class="text-decoration-none text-secondary">서비스 약관</a>
+            <a href="#" class="text-decoration-none text-secondary">고객문의</a>
+          </div>
+          
+          <p class="small mb-0 text-start footer-info">
+            <span class="d-block d-lg-inline mb-1 mb-lg-0">(08288)서울특별시 구로구 새말로 97</span>
+            <span class="d-none d-lg-inline text-muted mx-2">|</span>
+            <span class="d-block d-lg-inline mb-1 mb-lg-0">contact@petcode.kr</span>
+            <span class="d-none d-lg-inline text-muted mx-2">|</span>
+            <span class="d-block d-lg-inline">02-548-2026</span>
+          </p>
         </div>
+        
+        <div class="col-12 col-lg-3 text-start text-lg-end mt-4 mt-lg-0">
+          <p class="small mb-0 text-white-50 footer-copyright">&copy; 2026 Petcode. All rights reserved.</p>
+        </div>
+
       </div>
+      
     </div>
   </footer>
 
