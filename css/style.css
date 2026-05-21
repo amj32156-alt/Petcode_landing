@@ -1,3 +1,97 @@
+@import url(./vars.css);
+
 body{
-    font-family: "Poppins", "Pretendard", sans-serif;
+    font-family: var(--font-family-base, "Poppins", "Pretendard", sans-serif);
+}
+
+/* section padding */
+#hero, #about, #step, #reviews, #faq {
+    padding: var(--section-padding-y) 0;
+}
+
+#cta-banner, #newsletter {
+    padding: var(--section-padding-y-lg) 0;
+}
+
+.section-title{
+    margin-bottom: var(--section-gap-title-desc);
+}
+
+.section-desc{
+    margin-bottom: var(--section-gap-desc-card);
+}
+
+.h1{
+    font-size: var(--title-h1);
+    line-height: var(--title-h1-line-height);
+}
+
+.h1-sub{
+    font-size: var(--title-h1-sub);
+    line-height: var(--title-h1-sub-line-height);
+}
+
+.h2{
+    font-size: var(--title-h2);
+    line-height: var(--title-h2-line-height);
+}
+
+.h2-sub{
+        font-size: var(--title-h2-sub-mobile);
+        line-height: var(--title-h2-sub-mobile-line-height);
+    }
+
+.card-list{
+    display: flex;
+    gap: var(--card-gap);
+}
+
+@media (max-width: 768px){
+
+    /* section padding */
+    #hero, #about, #step, #reviews, #faq {
+        padding: var(--section-padding-y-mobile) 0;
+    }
+
+    #cta-banner, #newsletter {
+        padding: var(--section-padding-y-lg-mobile) 0;
+    }
+
+    /* title h1 */
+    .h1{
+        font-size: var(--title-h1-mobile);
+        line-height: var(--title-h1-mobile-line-height);
+    }
+
+    /* title h1 sub */
+    .h1-sub{
+        font-size: var(--title-h1-sub-mobile);
+        line-height: var(--title-h1-sub-mobile-line-height);
+    }
+
+    /* title h2 */
+    .h2{
+        font-size: var(--title-h2-mobile);
+        line-height: var(--title-h2-mobile-line-height);
+    }
+
+    /* title h2 sub */
+    .h2-sub{
+        font-size: var(--title-h2-sub-mobile);
+        line-height: var(--title-h2-sub-mobile-line-height);
+    }
+
+
+
+    /* gap */
+    .section-title{
+        margin-bottom: var(--section-gap-title-desc);
+    }
+
+    .section-description{
+        margin-bottom: var(--section-gap-desc-card);
+    }
+    .card-list{
+        gap: var(--card-gap);
+    }
 }
