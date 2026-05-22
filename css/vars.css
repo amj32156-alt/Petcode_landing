@@ -1,88 +1,122 @@
 :root {
 
-    /* brand colors */
+    /* =========================
+       brand colors
+    ========================= */
     --color-primary: #FF8200;
 
-    /* neutral colors */
+    /* =========================
+       neutral colors
+    ========================= */
     --color-black: #000;
     --color-white: #fff;
     --color-gray-100: #ededed;
     --color-gray-400: #a4a4a4;
     --color-gray-900: #111111;
 
-    /* background color */
+    /* =========================
+       background
+    ========================= */
     --color-bg: #ffffff;
 
-
-    /* font*/
+    /* =========================
+       font
+    ========================= */
     --font-family-base: "Poppins", "Pretendard", sans-serif;
 
-
-    /* typography*/
+    /* =========================
+       typography
+    ========================= */
     --letter-spacing: -0.02em;
     --line-height-none: 1;
 
     --nav-font-size: 20px;
 
+    /* h1 */
     --title-h1: 52px;
     --title-h1-line-height: 64px;
+
     --title-h1-mobile: 26px;
     --title-h1-mobile-line-height: 32px;
-    
+
+    /* h1 sub */
     --title-h1-sub: 24px;
     --title-h1-sub-line-height: 36px;
+
     --title-h1-sub-mobile: 16px;
     --title-h1-sub-mobile-line-height: 20px;
-    
+
+    /* h2 */
     --title-h2: 48px;
     --title-h2-line-height: 58px;
+
     --title-h2-mobile: 28px;
     --title-h2-mobile-line-height: 38px;
 
+    /* card title */
     --card-title: 36px;
     --card-title-line-height: 48px;
+
     --card-title-mobile: 24px;
     --card-title-mobile-line-height: 32px;
 
+    /* card desc */
     --card-desc: 20px;
     --card-desc-line-height: 28px;
+
     --card-desc-mobile: 16px;
     --card-desc-mobile-line-height: 22px;
 
-    --card-number: 16px;
-
+    /* caption */
     --caption: 14px;
     --caption-line-height: 20px;
+
     --caption-mobile-line-height: 18px;
 
+    /* button */
     --button: 24px;
     --button-mobile: 18px;
 
+    /* faq */
     --faq-question: 20px;
     --faq-question-line-height: 30px;
+
     --faq-question-mobile: 16px;
     --faq-question-mobile-line-height: 24px;
 
+    /* section caption */
     --section-caption: 24px;
     --section-caption-mobile: 16px;
 
-
-    /* border radius */
+    /* =========================
+       radius
+    ========================= */
     --radius: 14px;
 
-
-    /* container */
+    /* =========================
+       container
+    ========================= */
     --container-width: 1280px;
     --container-padding-x: 16px;
 
+    /* =========================
+       section spacing
+    ========================= */
 
-    /* section */
-    --section-padding-y: 200px;
-    --section-padding-y-lg: 300px;
+    /* header */
+    --header-padding-y: 10px;
 
-    /* gap */
-    --section-gap-title-desc: 40px;
-    --section-gap-desc-card: 96px;
+    /* footer */
+    --footer-padding-y: 40px;
 
+    /* mobile */
+    --section-padding-y-mobile: 80px;
+
+    /* desktop */
+    --section-padding-y-desktop: 200px;
+
+    /* =========================
+       layout gap
+    ========================= */
     --card-gap: 24px;
 }

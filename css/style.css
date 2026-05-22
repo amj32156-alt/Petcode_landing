@@ -1,97 +1,122 @@
 @import url(./vars.css);
 
-body{
+body {
     font-family: var(--font-family-base, "Poppins", "Pretendard", sans-serif);
 }
 
-/* section padding */
+/* bootstrap container reset */
+.container {
+    width: 100%;
+}
+
+.header-custom,
+.footer-custom,
+.container-custom {
+    width: 100%;
+    max-width: var(--container-width);
+    padding-left: var(--container-padding-x);
+    padding-right: var(--container-padding-x);
+    margin: 0 auto;
+}
+
+.header-custom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: var(--header-padding-y);
+    padding-bottom: var(--header-padding-y);
+}
+
+.footer-custom {
+    padding-top: var(--footer-padding-y);
+    padding-bottom: var(--footer-padding-y);
+}
+
+/* =========================
+   section padding
+========================= */
 #hero, #about, #step, #reviews, #faq {
-    padding: var(--section-padding-y) 0;
+    padding: var(--section-padding-y-mobile) 0;
 }
 
 #cta-banner, #newsletter {
-    padding: var(--section-padding-y-lg) 0;
+    padding: calc(var(--section-padding-y-mobile) + 20px) 0;
 }
 
-.section-title{
-    margin-bottom: var(--section-gap-title-desc);
-}
-
-.section-desc{
-    margin-bottom: var(--section-gap-desc-card);
-}
-
-.h1{
-    font-size: var(--title-h1);
-    line-height: var(--title-h1-line-height);
-}
-
-.h1-sub{
-    font-size: var(--title-h1-sub);
-    line-height: var(--title-h1-sub-line-height);
-}
-
-.h2{
-    font-size: var(--title-h2);
-    line-height: var(--title-h2-line-height);
-}
-
-.h2-sub{
-        font-size: var(--title-h2-sub-mobile);
-        line-height: var(--title-h2-sub-mobile-line-height);
-    }
-
-.card-list{
-    display: flex;
-    gap: var(--card-gap);
-}
-
-@media (max-width: 768px){
-
-    /* section padding */
+@media (min-width: 1200px) {
     #hero, #about, #step, #reviews, #faq {
-        padding: var(--section-padding-y-mobile) 0;
+        padding: var(--section-padding-y-desktop) 0;
     }
+    #cta-banner { padding: 300px 0; }
+    #newsletter { padding: 200px 0; }
+}
 
-    #cta-banner, #newsletter {
-        padding: var(--section-padding-y-lg-mobile) 0;
-    }
+/* =========================
+   typography (clamp 적용)
+========================= */
 
-    /* title h1 */
-    .h1{
-        font-size: var(--title-h1-mobile);
-        line-height: var(--title-h1-mobile-line-height);
-    }
+.h1 {
+    font-size: clamp(var(--title-h1-mobile), 2vw + 18px, var(--title-h1));
+    line-height: clamp(var(--title-h1-mobile-line-height), 3vw + 22px, var(--title-h1-line-height));
+}
 
-    /* title h1 sub */
-    .h1-sub{
-        font-size: var(--title-h1-sub-mobile);
-        line-height: var(--title-h1-sub-mobile-line-height);
-    }
+.h1-sub {
+    font-size: clamp(var(--title-h1-sub-mobile), 1vw + 12px, var(--title-h1-sub));
+    line-height: clamp(var(--title-h1-sub-mobile-line-height), 2vw + 12px, var(--title-h1-sub-line-height));
+}
 
-    /* title h2 */
-    .h2{
-        font-size: var(--title-h2-mobile);
-        line-height: var(--title-h2-mobile-line-height);
-    }
+.h2 {
+    font-size: clamp(var(--title-h2-mobile), 2vw + 20px, var(--title-h2));
+    line-height: clamp(var(--title-h2-mobile-line-height), 2vw + 30px, var(--title-h2-line-height));
+}
 
-    /* title h2 sub */
-    .h2-sub{
-        font-size: var(--title-h2-sub-mobile);
-        line-height: var(--title-h2-sub-mobile-line-height);
-    }
+.h2-sub {
+    font-size: clamp(var(--title-h1-sub-mobile), 1vw + 12px, var(--title-h1-sub));
+    line-height: clamp(var(--title-h1-sub-mobile-line-height), 2vw + 12px, var(--title-h1-sub-line-height));
+}
 
+.card-title {
+    font-size: clamp(var(--card-title-mobile), 1vw + 20px, var(--card-title));
+    line-height: clamp(var(--card-title-mobile-line-height), 2vw + 24px, var(--card-title-line-height));
+}
 
+.card-desc {
+    font-size: clamp(var(--card-desc-mobile), 0.5vw + 14px, var(--card-desc));
+    line-height: clamp(var(--card-desc-mobile-line-height), 0.5vw + 20px, var(--card-desc-line-height));
+}
 
-    /* gap */
-    .section-title{
-        margin-bottom: var(--section-gap-title-desc);
-    }
+.caption {
+    font-size: var(--caption);
+    line-height: clamp(var(--caption-mobile-line-height), 0.2vw + 17px, var(--caption-line-height));
+}
 
-    .section-description{
-        margin-bottom: var(--section-gap-desc-card);
-    }
-    .card-list{
-        gap: var(--card-gap);
-    }
+.button-text {
+    font-size: clamp(var(--button-mobile), 0.5vw + 16px, var(--button));
+}
+
+.faq-question {
+    font-size: clamp(var(--faq-question-mobile), 0.5vw + 14px, var(--faq-question));
+    line-height: clamp(var(--faq-question-mobile-line-height), 0.5vw + 22px, var(--faq-question-line-height));
+}
+
+.section-caption {
+    font-size: clamp(var(--section-caption-mobile), 1vw + 12px, var(--section-caption));
+}
+
+/* =========================
+   layout
+========================= */
+.section-title { margin-bottom: var(--section-gap-title-desc); }
+.section-desc { margin-bottom: var(--section-gap-desc-card); }
+.card-list { display: flex; gap: var(--card-gap); }
+
+/* =========================
+   dim overlay
+========================= */
+.dim::before {
+    content: "";
+    display: block;
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0,0,0,.5);
 }
