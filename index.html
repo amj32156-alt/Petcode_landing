@@ -56,31 +56,7 @@
       <path d="M335.929 67.2528C327.508 67.2528 319.463 62.9692 314.407 55.7812C312.839 53.5662 313.383 50.4946 315.598 48.9483C317.813 47.3812 320.884 47.9245 322.43 50.1394C325.69 54.7782 330.601 57.4319 335.929 57.4319C345.311 57.4319 352.959 49.0319 352.959 38.7304C352.959 28.429 345.311 20.029 335.929 20.029C328.887 20.029 322.493 24.8976 320.007 32.1275C319.129 34.6976 316.329 36.0558 313.759 35.1782C311.189 34.3006 309.83 31.5006 310.708 28.9305C314.574 17.7514 324.708 10.229 335.929 10.229C350.723 10.229 362.78 23.017 362.78 38.7513C362.78 54.4856 350.744 67.2737 335.929 67.2737V67.2528Z" fill="currentColor"/>
       <path d="M285.152 67.2527C270.358 67.2527 258.301 54.4646 258.301 38.7303C258.301 22.996 270.337 10.208 285.152 10.208C289.979 10.208 294.701 11.5871 298.838 14.1782C301.137 15.6199 301.827 18.6498 300.385 20.9483C298.943 23.2468 295.913 23.9154 293.615 22.4946C291.065 20.8856 288.14 20.0289 285.173 20.0289C275.791 20.0289 268.143 28.4289 268.143 38.7303C268.143 49.0318 275.791 57.4318 285.173 57.4318C288.036 57.4318 290.752 56.6796 293.239 55.196C295.37 53.9423 297.25 52.1453 298.713 50.0348C299.215 49.3035 303.853 42.8885 310.812 42.8885H310.853C313.862 42.8885 318.271 44.1632 322.283 50.0766C323.809 52.3124 323.224 55.384 320.967 56.8885C318.731 58.4139 315.659 57.8288 314.155 55.5721C312.943 53.796 311.689 52.7094 310.812 52.7094C309.537 52.7094 307.656 54.402 306.779 55.6348C304.543 58.8736 301.576 61.6527 298.253 63.6378C294.283 65.999 289.749 67.2527 285.173 67.2527H285.152Z" fill="currentColor"/>
     </symbol>
-
-
  </svg>
-
-  <!-- header -->
-  <!-- <header class="sticky-top bg-transparent">
-    <div class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <nav class="header-custom" aria-label="주 메뉴">
-        <a class="navbar-brand" href="#">
-            <img src="./img/identity/Petcode_logo.svg" alt="펫코드 홈" width="156" height="25" style="filter: invert(1);">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="메뉴 열기">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-end" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#reviews">고객후기</a></li>
-            <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
-            <li class="nav-item"><a class="nav-link" href="#newsletter">뉴스레터 구독하기</a></li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-  </header> -->
 
   <header class="header up top">
     <div class="header_in">
@@ -120,6 +96,7 @@
           </div>
         </div>
       </div>
+      
     </section>
 
     <!-- About -->
@@ -643,10 +620,51 @@
     </div>
   </footer>
 
+  <!-- quick menu -->
+  <div id="quickMenu" class="position-fixed">
+        
+    <button type="button"
+            class="quick-close btn p-0 border-0 rounded-circle">
+      <i class="bi bi-x-lg"></i>
+      </button>
 
+      <a href="javascript:void(0)"
+        class="quick-btn text-decoration-none text-white fw600">
+          <span class="quick-text fw500 lh-13">30초<br>무료진단</span>
+          <span class="quick-text-mobile fw500 lh-12">30초<br>무료진단</span>
+        </a>
 
+  </div>
 
+<script>
+  const quickMenu = document.getElementById('quickMenu');
+  const quickClose = document.querySelector('.quick-close');
+  const heroSection = document.getElementById('hero');
 
+  function setQuickMenuPosition() {
+    const heroHeight = heroSection.offsetHeight;
+
+    // 모바일
+    if (window.innerWidth <= 767) {
+
+      // hero 높이 539 + 22px
+      quickMenu.style.top = `${heroHeight + 22}px`;
+
+    } else {
+
+      // hero 하단보다 48px 위
+      quickMenu.style.top = `${heroHeight - 124}px`;
+    }
+  }
+
+  setQuickMenuPosition();
+
+  window.addEventListener('resize', setQuickMenuPosition);
+
+  quickClose.addEventListener('click', function () {
+    quickMenu.style.display = 'none';
+  });
+</script>
 
   <!-- plugin -->
   <script src="./assets/plugin/swiper/swiper-bundle.min.js"></script>
