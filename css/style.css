@@ -5,9 +5,11 @@ body {
   letter-spacing: -3%;
 }
 
+
 /* bootstrap container reset */
 .container {
   width: 100%;
+  max-width: 100% !important;
 }
 
 .text-main {
@@ -323,6 +325,10 @@ body {
 
 /* ---------- header ---------- */
 /* 데스크탑 헤더 높이 */
+#main-header .container {
+  max-width: 1280px !important;
+}
+
 #main-header {
   padding: 0;
 }
@@ -650,23 +656,37 @@ body {
     color: #fff;
     border-color: var(--black, #000);
   }
-} */
+
 
 @media (max-width: 768px) {
     .nav { display: none; } /* 모바일에서는 숨기고 햄버거 메뉴로 대체 */
 }
 
-/* 모바일(작은 화면)에서는 370px */
-.about-card-body {
-  min-height: 370px !important;
+.about-card {
+  height: 528px;
 }
 
-/* 태블릿 이상(768px 이상) 화면에서는 400px */
-@media (min-width: 768px) {
-  .about-card-body {
-      min-height: 400px !important;
+@media (max-width: 991px) {
+  .about-card {
+    height: 377px;
+  }
+
+  #about .container-custom {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  #about .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  #about .col-md-4 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 }
+
 
 
 /* quick menu */
@@ -675,8 +695,9 @@ body {
   z-index: 9999;
 }
 
+
 /* 1280 이하 */
-@media (max-width: 1279px) {
+@media (max-width: 1280px) {
   #quickMenu {
     right: 16px;
   }
@@ -957,16 +978,19 @@ body {
 
 /* 기본 설정 (데스크탑 등 768px 이상) */
 .card-fixed-min {
-  min-height: 240px;
+  min-height: 200px;
 }
 
-.accordion-button {
-  min-width: 848px;
+@media (max-width: 991px) {
+  #about .col-md-4 {
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+  }
 }
 
 /* 카드 높이 및 기본 레이아웃 */
-.card-fixed-240 {
-  height: 240px !important;
+.card-fixed-200 {
+  height: 200px !important;
   display: flex;
   align-items: center; /* 아이콘 세로 중앙 정렬용 */
   padding: 40px;       /* 카드 내부 여백 */
