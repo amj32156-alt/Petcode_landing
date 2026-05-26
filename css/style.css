@@ -279,7 +279,7 @@ body {
   display: block;
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 /* layout */
@@ -526,6 +526,96 @@ body {
   }
 }
 
+/* 버튼 */
+.button {
+  padding: 16px 48px;
+  border: 1.5px solid var(--color-white);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.3);
+  color: var(--color-white);
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background: rgba(255, 255, 255, 0.6);
+  padding-left: 47px;
+  padding-right: 47px;
+}
+
+.review-arrow-btn {
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 50%;
+  background-color: #EDEDED;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.review-arrow-btn i {
+  font-size: 36px;
+  line-height: 1;
+  color: #A4A4A4;
+  transition: all 0.3s ease;
+}
+
+.review-arrow-btn:hover {
+  background-color: #111111;
+}
+
+.review-arrow-btn:hover i {
+  color: #fff;
+}
+
+/* 모바일 */
+@media (max-width: 767px) {
+  .review-arrow-btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .review-arrow-btn i {
+    font-size: 32px;
+  }
+}
+
+#newsletter .btn {
+  background-color: rgba(17, 17, 17, 0.8);
+  border: 1.5px solid var(--color-white);
+  color: var(--color-white) !important;
+}
+
+#newsletter input.form-control {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+  border: 1.5px solid var(--color-white) !important;
+  color: var(--color-white) !important;
+}
+
+#newsletter input.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+#newsletter input.form-control:focus {
+  background-color: rgba(255, 255, 255, 0.6) !important;
+  color: var(--color-white) !important;
+  border-color: var(--color-white) !important;
+  box-shadow: none !important;
+}
+
+.newsletter-input,
+.newsletter-btn {
+  border-radius: 10px;
+}
+
+@media (max-width: 767px) {
+  .newsletter-input,
+  .newsletter-btn {
+    border-radius: 8px;
+  }
+}
+
 /* 아이템 */
 .accordion-item {
   border: 0 !important;
@@ -580,4 +670,8 @@ body {
 /* Bootstrap 기본 흰 배경 제거 */
 .accordion-collapse {
   background: var(--color-gray-900);
+}
+
+#reviewCarousel .card {
+  background-color: var(--color-gray-100);
 }
