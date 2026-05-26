@@ -106,7 +106,13 @@ body {
 /* =========================
    section padding
 ========================= */
-#hero,
+#hero {
+  background-image: url("../img/bg_img/hero_bgimg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+
 #about,
 #step,
 #reviews,
@@ -114,18 +120,25 @@ body {
   padding: var(--section-padding-y-mobile) 0;
 }
 
+#hero {
+  padding: calc(var(--section-padding-y-mobile) + 10px) 0;
+}
+
 #cta-banner,
 #newsletter {
   padding: calc(var(--section-padding-y-mobile) + 20px) 0;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   #hero,
   #about,
   #step,
   #reviews,
   #faq {
     padding: var(--section-padding-y-desktop) 0;
+  }
+  #hero {
+    padding: 280px 0;
   }
   #cta-banner {
     padding: 300px 0;
@@ -627,18 +640,20 @@ body {
 
 /* 버튼 */
 .button {
-  padding: 16px 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 180px;
+  height: 60px;
+
   border: 1.5px solid var(--color-white);
   border-radius: 999px;
+
   background: rgba(255, 255, 255, 0.3);
   color: var(--color-white);
-  transition: all 0.3s ease;
-}
 
-.button:hover {
-  background: rgba(255, 255, 255, 0.6);
-  padding-left: 47px;
-  padding-right: 47px;
+  transition: all 0.3s ease;
 }
 
 .review-arrow-btn {
@@ -668,18 +683,6 @@ body {
   color: #fff;
 }
 
-/* 모바일 */
-@media (max-width: 767px) {
-  .review-arrow-btn {
-    width: 40px;
-    height: 40px;
-  }
-
-  .review-arrow-btn i {
-    font-size: 32px;
-  }
-}
-
 #newsletter .btn {
   background-color: rgba(17, 17, 17, 0.8);
   border: 1.5px solid var(--color-white);
@@ -697,7 +700,7 @@ body {
 }
 
 #newsletter input.form-control:focus {
-  background-color: rgba(255, 255, 255, 0.6) !important;
+  background-color: rgba(255, 255, 255, 0.4) !important;
   color: var(--color-white) !important;
   border-color: var(--color-white) !important;
   box-shadow: none !important;
@@ -708,7 +711,37 @@ body {
   border-radius: 10px;
 }
 
+/* 모바일 */
 @media (max-width: 767px) {
+  .review-arrow-btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .review-arrow-btn i {
+    font-size: 32px;
+  }
+
+  .button {
+    width: 140px;
+    height: 52px;
+  }
+}
+@media (max-width: 767px) {
+  .review-arrow-btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .review-arrow-btn i {
+    font-size: 32px;
+  }
+
+  .button {
+    width: 140px;
+    height: 52px;
+  }
+  
   .newsletter-input,
   .newsletter-btn {
     border-radius: 8px;
