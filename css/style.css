@@ -231,7 +231,7 @@ body {
 }
 /* 기본 모바일 설정 (100px) */
 .newsletter-number {
-  font-size: 100px;
+  font-size: 80px;
 }
 .newsletter-plus {
   font-size: 66px;
@@ -284,6 +284,16 @@ body {
 .section-title-gap > *,
 .section-content-gap > * {
   margin: 0 !important;
+}
+
+#reviews .reviewSwiper {
+  margin-top: 40px !important;
+}
+
+@media (min-width: 768px) {
+  #reviews .reviewSwiper {
+    margin-top: 64px !important;
+  }
 }
 
  .nav-font {
@@ -378,6 +388,9 @@ body {
   #main-header .navbar {
     height: 56px;
   }
+  #hero .container-custom {
+    padding-top: 56px;
+  }
 
   #logo {
     width: 120px !important;
@@ -430,207 +443,46 @@ body {
   }
 }
 
-
-
-
-/* .header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  font-size: var(--txt);
-  color: var(--black);
-  background-color: #fff;
-  z-index: 1000;
-  transition:
-    transform 0.3s ease,
-    background-color 0.3s ease;
-}
-.header.down {
-  transform: translateY(-100%);
-}
-.header.up {
-  transform: translateY(0);
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+.reviewSwiper {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
 }
 
-.header .header_in {
-  display: grid;
-  grid-template-columns: max-content minmax(0, 1fr) max-content;
-  gap: 0;
-  width: 100%;
-  max-width: 100%;
-  height: var(--hdH, 80px);
-  padding: 0 4rem;
-  align-items: center;
+.reviewSwiper .swiper-slide {
+  height: auto;
 }
 
-.header .logo {
-  grid-row: 1;
-  width: max(20rem, 200px);
-  transition: filter 0.3s ease;
-}
-.header .logo svg {
-  display: block;
-  width: 100%;
+/* 카드 높이 고정 */
+#reviews .swiper-slide .card {
+  height: 254px;
+  background-color: var(--color-gray-100) !important;
 }
 
-.header .nav .top_box {
-  display: none;
-}
-.header .nav {
-  grid-column: 2;
-  grid-row: 1;
-  height: 100%;
-  margin: 0 auto;
-  font-size: var(--txt2);
-}
-.header .nav .depth1 {
-  position: relative;
-  display: flex;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-  z-index: 10;
-}
-.header .nav .depth1 li {
-  position: relative;
-  height: 100%;
-  transition: color 0.3s ease;
-}
-.header .nav .depth1 > li > a {
-  position: relative;
-  display: flex;
-  height: 100%;
-  padding: 0 4rem 0;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  white-space: nowrap;
-  transition:
-    padding 0.5s ease,
-    color 0.3s ease;
-}
-.header .nav .depth1 > li > a span {
-  position: relative;
-}
-.header .nav .depth1 > li.active > a {
-  color: var(--brown);
-}
-.header .nav .depth1 > li.active > a span:before {
-  opacity: 1;
-  transform: translate(-50%, calc(-100% - 3px));
+/* 점 위치 */
+.review-pagination {
+  position: relative !important;
+  margin-top: 16px !important;
+  margin-bottom: 0 !important;
 }
 
-.header .nav .depth2 {
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  width: 100%;
-  padding-top: 20px;
-  transform: translate(-50%, 100%);
-  white-space: nowrap;
-  text-align: center;
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.3s;
-  transition-delay: -0.1s;
-  z-index: 1;
-}
-.header .nav .depth2 > li > a {
-  display: block;
-  padding: 9px 0;
-  font-size: 0.9em;
-  font-weight: 500;
-  transition: color 0.3s ease;
-  color: var(--gray);
-}
-.header .nav .depth2 > li > a:hover {
-  color: var(--brown);
-}
-.header .nav .depth2 > li.active > a {
-  font-weight: 600;
-  color: var(--brown);
-}
-.header .nav .depth2 > li > a > span {
-  position: relative;
+.swiper-pagination-bullet {
+  background: #111111 !important;
+  opacity: 0.2;
 }
 
-.header .util_wrap {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  grid-column: 3;
-  grid-row: 1;
-  height: 100%;
-  font-size: 0.9em;
-}
-.header .util_wrap .util_btn {
-  display: inline-block;
-  padding: 0.7em 1.2em;
-  border-radius: 2em;
-  font-weight: 600;
-  font-size: var(--smTxt);
-  transition:
-    background 0.3s ease-in-out,
-    color 0.3s ease-in-out,
-    border 0.3s ease-in-out;
-}
-.header .util_wrap .util_btn + .util_btn {
-  margin-left: 1em;
-}
-.header .util_wrap .util_btn.join {
-  border: 1px solid var(--black);
-}
-.header .util_wrap .util_btn.login {
-  background-color: var(--green);
-  border: 1px solid var(--green);
-  color: #fff;
-}
-.header .util_wrap .util_btn.join.logout {
-  display: block;
-}
-
-.header.on .header_in {
-  border-bottom: 2px solid var(--lineColor);
-}
-.header.on .nav .depth1 > li > a {
-  padding: 0 5rem 0;
-}
-.header.on .nav .depth2 {
-  transition-delay: 0.1s;
-  pointer-events: auto;
+.swiper-pagination-bullet-active {
+  background: #111111 !important;
   opacity: 1;
 }
-.header .nav .gnb_bg {
-  position: absolute;
-  left: 50%;
-  bottom: 1px;
-  width: 100%;
-  height: 0;
-  background-color: #fff;
-  transform: translate(-50%, 100%);
-  transition: all 0.5s;
+
+@media (max-width: 767px) {
+  #reviews .swiper-slide .card p {
+    -webkit-line-clamp: 3 !important;
+  }
+  #reviews .swiper-slide .card {
+    height: 236px !important;
+  }
 }
-.header.on .nav .gnb_bg {
-  height: 38rem;
-  box-shadow: rgba(0, 157, 165, 0.07) 0px 8px 15px;
-}
-
-
-@media screen and (min-width: 1280px) {
-  .header .util_wrap .util_btn:hover {
-    background-color: var(--black);
-    color: #fff;
-    border-color: var(--black);
-  }
-  .header .nav .depth1 > li > a:hover {
-    color: var(--brown);
-  }
-
-  .main .header.top {
-    background-color: rgba(0, 0, 0, 0);
-    box-shadow: none;
-  }
 
   /* .main .header.top .logo{filter: brightness(0) saturate(0) invert(1);} */
   .main .header.top .nav .gnb_bg {
