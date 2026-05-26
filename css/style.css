@@ -253,6 +253,37 @@ body {
   );/
 }
 
+
+/* section-title-gap: 타이틀과 설명글 사이 간격 */
+.section-title-gap {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 20px !important; /* 모바일 */
+}
+
+/* section-content-gap: 헤더와 카드 사이의 간격 */
+.section-content-gap {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 40px !important; /* 모바일 */
+}
+
+/* 데스크탑 반응형 설정 */
+@media (min-width: 768px) {
+  .section-title-gap {
+    gap: 24px !important;
+  }
+  .section-content-gap {
+    gap: 64px !important;
+  }
+}
+
+/* 중요: 내부에 있는 요소들의 기본 마진을 강제 제거 (이게 핵심입니다) */
+.section-title-gap > *,
+.section-content-gap > * {
+  margin: 0 !important;
+}
+
  .nav-font {
   font-size: clamp(
     var( --nav-font-size)
@@ -806,4 +837,8 @@ body {
 
 #reviewCarousel .card {
   background-color: var(--color-gray-100);
+}
+
+.footer {
+  background-color: var(--color-gray-900);
 }
