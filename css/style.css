@@ -305,6 +305,10 @@ body {
   font-size: 14px;
 }
 
+.name {
+  font-size: 16px;
+}
+
 
 /* =========================
    dim overlay
@@ -841,4 +845,55 @@ body {
 
 .footer {
   background-color: var(--color-gray-900);
+}
+
+/* 카드 패딩 (상하좌우 32px) */
+.card-padding {
+  padding: 32px !important;
+}
+
+/* 기본 설정 (데스크탑 등 768px 이상) */
+.card-fixed-min {
+  min-height: 240px;
+}
+
+.accordion-button {
+  min-width: 848px;
+}
+
+/* 카드 높이 및 기본 레이아웃 */
+.card-fixed-240 {
+  height: 240px !important;
+  display: flex;
+  align-items: center; /* 아이콘 세로 중앙 정렬용 */
+  padding: 40px;       /* 카드 내부 여백 */
+  position: relative;
+}
+
+.card-text-container {
+  flex: 1;             /* 왼쪽 영역 확보 */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* 텍스트를 카드 하단으로 */
+  height: 100%;        /* 카드 높이만큼 영역 확보 */
+}
+
+.card-icon-container {
+  width: 190px;
+  flex-shrink: 0;      /* 아이콘 크기 유지 */
+  display: flex;
+  justify-content: center;
+}
+
+/* 데스크탑 반응형 설정 (768px 이상일 때 상하좌우 48px) */
+@media (min-width: 768px) {
+  .card-padding {
+    padding: 48px !important;
+  }
+  .card-fixed-min {
+    min-height: 205px;
+  }
+  .accordion-button {
+  min-width: 343px;
+}
 }
