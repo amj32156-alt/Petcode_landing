@@ -83,3 +83,14 @@ AOS.init({
   mirror: false,
   anchorPlacement: 'top-bottom',
 });
+
+// 모바일 메뉴바 열림 딤처리
+const navbarCollapse = document.querySelector('#navbarNav');
+
+navbarCollapse.addEventListener('show.bs.collapse', function () {
+  document.body.classList.add('menu-open');
+});
+
+navbarCollapse.addEventListener('hide.bs.collapse', function () {
+  document.body.classList.remove('menu-open');
+});
