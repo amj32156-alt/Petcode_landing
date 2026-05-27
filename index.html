@@ -89,20 +89,7 @@
 
   <main id="content">
     <!-- hero -->
-    <section id="hero" class="text-white">
-      <div class="container-custom">
-        <div class="row">
-          <div>
-            <h1 class="h1 fw600 lh-13 mb-3 text-wrap">나의 반려동물에게 딱 맞는 케어,<br>궁금하지 않으신가요?</h1>
-            <p class="h1-sub fw400 lh-13 mb-5">이제는 데이터를 기반으로 더 정확하고 <br class="d-sm-none">체계적인 케어를 시작해보세요.</p>
-            <a href="#" class="button button-text text-decoration-none btn-outline-light rounded-pill">자세히 보기</a>
-          </div>
-        </div>
-      </div>
-      
-    </section>
-
-    <!-- <section id="hero" class="text-white position-relative overflow-hidden">
+    <section id="hero" class="text-white position-relative overflow-hidden">
 
       <video class="hero-video" autoplay muted loop playsinline>
         <source src="./img/bg_img/hero.mp4" type="video/mp4">
@@ -112,13 +99,13 @@
         <div class="row">
           <div>
             <h1 class="h1 fw600 lh-13 mb-3 text-wrap">나의 반려동물에게 딱 맞는 케어,<br>궁금하지 않으신가요?</h1>
-            <p class="h1-sub fw400 lh-13 mb-5">이제는 데이터를 기반으로 더 정확하고 <br class="d-sm-none">체계적인 케어를 시작해보세요.</p>
+            <p class="h1-sub fw400 lh-13 mb-5">이제는 데이터를 기반으로 더 정확하고 <br class="d-none d-md-block">체계적인 케어를 시작해보세요.</p>
             <a href="#" class="button button-text text-decoration-none btn-outline-light rounded-pill">자세히 보기</a>
           </div>
         </div>
       </div>
 
-    </section> -->
+    </section>
 
     <!-- About -->
     <section id="about">
@@ -665,95 +652,7 @@
 <script src="./assets/plugin/bootstrap/bootstrap.bundle.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="./js/script.js"></script>
-
-<!-- 그 다음에 초기화 스크립트 -->
-<script>
-  const quickMenu = document.getElementById('quickMenu');
-  const quickClose = document.querySelector('.quick-close');
-  const heroSection = document.getElementById('hero');
-
-  function setQuickMenuPosition() {
-    const heroHeight = heroSection.offsetHeight;
-    if (window.innerWidth <= 767) {
-      quickMenu.style.top = `${heroHeight + 22}px`;
-    } else {
-      quickMenu.style.top = `${heroHeight - 124}px`;
-    }
-  }
-
-  setQuickMenuPosition();
-  window.addEventListener('resize', setQuickMenuPosition);
-
-  quickClose.addEventListener('click', function () {
-    quickMenu.style.display = 'none';
-  });
-
-  window.addEventListener('scroll', function() {
-    const header = document.getElementById('main-header');
-    if (window.scrollY > 50) {
-      header.classList.add('scrolled');
-    } else {
-      header.classList.remove('scrolled');
-    }
-  });
-
-  const reviewSwiper = new Swiper('.reviewSwiper', {
-  slidesPerView: 'auto',
-  spaceBetween: 12,
-  loop: true,
-  pagination: {
-    el: '.review-pagination',
-    clickable: true,
-  },
-  navigation: {
-    nextEl: '.swiper-next',
-    prevEl: '.swiper-prev',
-  },
-  breakpoints: {
-    0: {
-      slidesPerView: 1.2,
-    },
-    768: {
-      slidesPerView: 2.2,
-    },
-    992: {
-      slidesPerView: 3.2,
-    }
-  }
-});
-
-function countUp(el, target, duration = 1500) {
-  let start = 0;
-  const step = target / (duration / 16);
-  const timer = setInterval(() => {
-    start += step;
-    if (start >= target) {
-      start = target;
-      clearInterval(timer);
-    }
-    el.textContent = Math.floor(start).toLocaleString('ko-KR');
-  }, 16);
-}
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      countUp(entry.target, 3754);
-    }
-  });
-}, { threshold: 0.5 });
-
-const counterEl = document.querySelector('.newsletter-number');
-if (counterEl) observer.observe(counterEl);
-
-AOS.init({
-  disable: false,
-  duration: 800,
-  once: true,
-  mirror: false,
-  anchorPlacement: 'top-bottom',
-});
-</script>
+ㅎ
 
 </body>
 

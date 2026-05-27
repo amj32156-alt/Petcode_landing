@@ -72,11 +72,6 @@ body {
 /* =========================
    section padding
 ========================= */
-#hero {
-  background-image: url("../img/bg_img/hero_bgimg.jpg");
-  background-size: cover;
-  background-position: center;
-}
 
 #about,
 #step,
@@ -244,6 +239,49 @@ body {
   position: absolute;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hero-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+#hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  pointer-events: none;
+}
+
+#hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  z-index: 1;
+  pointer-events: none;
+}
+
+#hero .container-custom {
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 767px) {
+  .hero-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
 }
 
 /* ---------- header ---------- */
