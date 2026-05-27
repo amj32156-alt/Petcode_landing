@@ -118,6 +118,7 @@ body {
 #about,
 #step,
 #reviews,
+#cta-banner,
 #faq {
   padding: var(--section-padding-y-mobile) 0;
 }
@@ -126,7 +127,6 @@ body {
   padding: calc(var(--section-padding-y-mobile) + 10px) 0;
 }
 
-#cta-banner,
 #newsletter {
   padding: calc(var(--section-padding-y-mobile) + 20px) 0;
 }
@@ -136,14 +136,12 @@ body {
   #about,
   #step,
   #reviews,
+  #cta-banner,
   #faq {
     padding: var(--section-padding-y-desktop) 0;
   }
   #hero {
     padding: 280px 0;
-  }
-  #cta-banner {
-    padding: 300px 0;
   }
   #newsletter {
     padding: 200px 0;
@@ -489,23 +487,23 @@ body {
     background-color: rgba(0, 0, 0, 0.1);
   }
   .main .header.top .nav .depth1 > li > a {
-    color: #fff;
+    color: var(--color-white);
     transition:
       padding 0.5s ease,
       color 0s ease;
   }
   .main .header.top .util_wrap .util_btn.join {
-    border-color: #fff;
-    color: #fff;
+    border-color: var(--color-white);
+    color: var(--color-white);
   }
   .main .header.top .util_wrap .util_btn.login {
-    background-color: #fff;
-    border: 1px solid #fff;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-white);
     color: var(--black, #000);
   }
   .main .header.top .util_wrap .util_btn:hover {
     background-color: var(--black, #000);
-    color: #fff;
+    color: var(--color-white);
     border-color: var(--black, #000);
   }
 
@@ -577,7 +575,7 @@ body {
 
 .quick-btn:hover {
   background: #111111;
-  color: #fff;
+  color: var(--color-white);
 }
 
 /* X button */
@@ -667,6 +665,11 @@ body {
   transition: all 0.3s ease;
 }
 
+.button:hover {
+  background: rgba(255, 255, 255, 0.6);
+  color: var(--color-white);
+}
+
 .review-arrow-btn {
   width: 48px;
   height: 48px;
@@ -691,7 +694,7 @@ body {
 }
 
 .review-arrow-btn:hover i {
-  color: #fff;
+  color: var(--color-white);
 }
 
 #newsletter .btn {
@@ -761,7 +764,8 @@ body {
 
 /* 아이템 */
 .accordion-item {
-  border: 0 !important;
+  border: none !important;
+  outline: none !important;
   background: transparent !important;
   overflow: hidden;
   border-radius: 20px !important;
@@ -772,6 +776,9 @@ body {
   background: var(--color-gray-100) !important;
   color: var(--color-gray-900) !important;
   box-shadow: none !important;
+  border: none !important;
+  border-bottom: none !important;
+  outline: none !important;
   padding: 1.5rem !important;
 }
 
@@ -790,6 +797,9 @@ body {
   background: var(--color-gray-900) !important;
   color: var(--color-white) !important;
   box-shadow: none !important;
+  border: none !important;
+  border-bottom: none !important;
+  outline: none !important;
 }
 
 /* 열렸을 때 질문 */
@@ -805,7 +815,9 @@ body {
 /* 답변 영역 */
 .accordion-body {
   background: var(--color-gray-900) !important;
-  color:  var(--color-white) !important;
+  color: var(--color-white) !important;
+  border: none !important;
+  border-top: none !important;
   padding-top: 0 !important;
   padding-bottom: 1.5rem !important;
 }
@@ -813,6 +825,23 @@ body {
 /* Bootstrap 기본 흰 배경 제거 */
 .accordion-collapse {
   background: var(--color-gray-900);
+  border: none !important;
+}
+
+/* Bootstrap CSS 변수 직접 덮어쓰기 */
+.accordion {
+  --bs-accordion-border-width: 0 !important;
+  --bs-accordion-border-color: transparent !important;
+  --bs-accordion-btn-focus-border-color: transparent !important;
+  --bs-accordion-inner-border-radius: 0 !important;
+}
+
+.accordion-button:not(.collapsed) + .accordion-collapse {
+  margin-top: -1px;
+}
+
+.accordion-collapse {
+  margin-top: -2px;
 }
 
 #reviewCarousel .card {
