@@ -179,6 +179,12 @@ body.menu-open::after {
   }
 }
 
+@media (min-width: 992px) {
+  #newsletter .col-lg-4 {
+    text-align: right !important;
+  }
+}
+
 /* 오타 / 제거됨 */
 .section-caption {
   font-size: clamp(var(--section-caption-mobile), 1vw + 12px, var(--section-caption));
@@ -704,6 +710,12 @@ body.menu-open::after {
 .newsletter-input,
 .newsletter-btn {
   border-radius: 10px;
+}
+
+@media (min-width: 992px) {
+  #newsletter .col-lg-4 {
+    text-align: right !important;
+  }
 }
 
 /* ---------- accordion (FAQ) ---------- */
