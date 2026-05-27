@@ -79,7 +79,7 @@ if (counterEl) observer.observe(counterEl);
 AOS.init({
   disable: false,
   duration: 800,
-  once: true,
+  once: false,
   mirror: false,
   anchorPlacement: 'top-bottom',
 });
