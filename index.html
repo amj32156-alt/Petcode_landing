@@ -102,6 +102,24 @@
       
     </section>
 
+    <!-- <section id="hero" class="text-white position-relative overflow-hidden">
+
+      <video class="hero-video" autoplay muted loop playsinline>
+        <source src="./img/bg_img/hero.mp4" type="video/mp4">
+      </video>
+
+      <div class="container-custom position-relative">
+        <div class="row">
+          <div>
+            <h1 class="h1 fw600 lh-13 mb-3 text-wrap">나의 반려동물에게 딱 맞는 케어,<br>궁금하지 않으신가요?</h1>
+            <p class="h1-sub fw400 lh-13 mb-5">이제는 데이터를 기반으로 더 정확하고 <br class="d-sm-none">체계적인 케어를 시작해보세요.</p>
+            <a href="#" class="button button-text text-decoration-none btn-outline-light rounded-pill">자세히 보기</a>
+          </div>
+        </div>
+      </div>
+
+    </section> -->
+
     <!-- About -->
     <section id="about">
       <div class="container-custom text-center section-content-gap">
@@ -728,9 +746,13 @@ const observer = new IntersectionObserver((entries) => {
 const counterEl = document.querySelector('.newsletter-number');
 if (counterEl) observer.observe(counterEl);
 
-if (window.innerWidth >= 992) {
-  AOS.init();
-}
+AOS.init({
+  disable: false,
+  duration: 800,
+  once: true,
+  mirror: false,
+  anchorPlacement: 'top-bottom',
+});
 </script>
 
 </body>
