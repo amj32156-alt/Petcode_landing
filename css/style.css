@@ -1,5 +1,9 @@
 @import url(./vars.css);
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--font-family-base, "Poppins ,Pretendard, sans-serif");
   letter-spacing: -3%;
@@ -331,7 +335,6 @@ body {
 
 /* layout */
 
-/* ---------- header ---------- */
 /* 데스크탑 헤더 높이 */
 #main-header .container {
   max-width: 1280px !important;
@@ -347,7 +350,7 @@ body {
 
 /* 로고: 스크롤 전 흰색으로 보이게 */
 #logo {
-  filter: brightness(0) invert(1); /* 검정 SVG → 흰색 */
+  filter: brightness(0) invert(1);
   transition: filter 0.3s ease;
 }
 
@@ -358,7 +361,7 @@ body {
 }
 
 #main-header.scrolled #logo {
-  filter: none; /* 원본 색상(검정)으로 복원 */
+  filter: none; /* 원본 주황색 그대로 */
 }
 
 #main-header.scrolled .nav-link {
@@ -367,6 +370,11 @@ body {
 
 #main-header.scrolled .nav-link:hover {
   color: var(--color-black) !important;
+}
+
+#logo {
+  filter: brightness(0) invert(1);
+  transition: none;
 }
 
 /* 햄버거 버튼 테두리 및 그림자 제거 */
@@ -842,6 +850,10 @@ body {
 
 .accordion-collapse {
   margin-top: -2px;
+}
+
+.accordion-collapse {
+  transition: height 0.35s ease !important;
 }
 
 #reviewCarousel .card {
