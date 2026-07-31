@@ -790,7 +790,7 @@ body.menu-open::after {
   background-color: var(--color-gray-100);
 }
 
-.footer {
+#footer {
   background-color: var(--color-gray-900);
 }
 
@@ -833,4 +833,14 @@ body.menu-open::after {
   .card-fixed-min {
     min-height: 205px;
   }
+}
+
+#footer div div div.col-12.col-lg-9.d-flex.flex-column.align-items-start div a,
+#footer div.col-12.col-lg-9.d-flex.flex-column.align-items-start p,
+#footer div.col-12.col-lg-3.text-start.mt-4.mt-lg-0 p{
+  color: var(--color-gray-400) !important;
+}
+
+#newsletter p.text-white-50{
+  color: var(--color-gray-400) !important;
 }
